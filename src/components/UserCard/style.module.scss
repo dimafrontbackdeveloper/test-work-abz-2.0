@@ -1,0 +1,46 @@
+@import './../../assets/scss/mixins';
+
+.card {
+   background: #FFFFFF;
+   border-radius: 10px;
+   padding: 20px;
+
+   // .card__img
+
+   &__img {
+      margin-bottom: 10px;
+
+      @include breakpoint(360px){
+         margin-bottom: 14px;
+       }
+
+       img{
+         border-radius: 50px;
+
+       }
+   }
+
+   // .card__name
+
+   &__name {
+      margin-bottom: 20px;
+   }
+
+   // .card__position
+
+   &__position {
+   }
+
+   // .card__mail
+
+   &__mail {
+      position: relative;
+      cursor: pointer;
+
+   }
+
+   // .card__phone
+
+   &__phone {
+   }
+}

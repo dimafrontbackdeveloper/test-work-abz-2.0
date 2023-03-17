@@ -1,0 +1,40 @@
+@import './../../assets/scss/mixins';
+
+.intro {
+
+   // .intro__container
+
+   &__container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 164px 0px;
+      background:  url('./../../assets/images/header-bg2.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    
+      @include breakpoint(768px){
+         padding: 89px 0px;
+       }
+
+       @include breakpoint(360px){
+         padding: 40px 0px 70px 0px;
+       }
+   }
+
+   // .intro__block
+
+   &__block {
+      color: #FFFFFF;
+      text-align: center;
+      max-width: 380px;
+      margin: 0 auto;
+
+      h1{
+         margin-bottom: 21px;
+      }
+
+      p{
+         margin-bottom: 32px;
+      }
+   }
+}

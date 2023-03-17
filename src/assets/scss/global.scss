@@ -1,0 +1,101 @@
+@import './mixins';
+@import './variables';
+
+body,html{
+   font-family: 'Nunito', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 26px;
+   color: rgba(0, 0, 0, 0.87);
+   background: $bg;
+}
+
+.d-f{
+   display: flex;
+}
+
+.d-g{
+   display: grid;
+}
+
+.jc-sb{
+   justify-content: space-between;
+}
+
+.jc-c{
+   justify-content: center;
+}
+
+.ai-c{
+   align-items: center;
+}
+
+.fd-c{
+   flex-direction:column;
+}
+
+.fw-w{
+   flex-wrap: wrap;
+}
+
+
+.ta-c{
+   text-align: center;
+}
+
+.ta-e{
+   text-align: end;
+}
+
+.title{
+   font-size: 40px;
+   line-height: 40px;
+}
+
+.section{
+   margin-bottom: 140px;
+}
+
+.cutWithDots{
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+
+.dn{
+   display: none;
+}
+
+button.disabled{
+   background: #B4B4B4 ;
+   color: rgba(255, 255, 255, 0.87) ;
+   cursor: not-allowed ;
+   pointer-events:none ;
+}
+
+input[type=radio].active{
+   border: 1px solid #00BDD3 ;
+
+   &::after {
+      content: '';
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #00BDD3;
+   }
+}
+
+.tooltip{
+   background: rgba(0, 0, 0, 0.87) !important;
+      border-radius: 4px !important;
+      padding: 3px 16px !important;
+      color:#fff !important;
+      transform: translateX(50%);
+}
+
+.tippy-box{
+max-width: none !important;
+}

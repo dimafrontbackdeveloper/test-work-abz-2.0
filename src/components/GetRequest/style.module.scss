@@ -1,0 +1,29 @@
+@import './../../assets/scss/mixins';
+
+
+.getRequest {
+   text-align: center;
+
+   h2{
+      margin-bottom: 50px;
+   }
+
+   // .getRequest__row
+
+   &__row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(1px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+
+      @include breakpoint(1023px){
+         grid-template-columns: repeat(2, minmax(1px, 1fr));
+         gap: 18px;
+       }
+
+      @include breakpoint(767px){
+         grid-template-columns: repeat(1, minmax(1px, 1fr));
+         gap: 18px;
+       }
+   }
+}

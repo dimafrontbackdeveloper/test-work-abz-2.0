@@ -1,0 +1,27 @@
+.header {
+   background: #FFFFFF;
+   padding: 13px 0px;
+
+   // .header__row
+
+   &__row {
+   }
+
+   // .header__left
+
+   &__left {
+      margin-right: 10px;
+      flex: 0 0 104px;
+
+   }
+
+   // .header__right
+
+   &__right {
+      button{
+         &:first-child{
+            margin-right:10px ;
+         }
+      }
+   }
+}
